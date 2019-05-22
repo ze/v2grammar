@@ -1,0 +1,14 @@
+;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;x;;;;
+USA;United States of America;x;;;;
+USA_ADJ;American;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+GER;Germany;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+GER_ADJ;German;;;;;;;;;;;;;;;;;;;;;;;x;;;;
+FRA;France;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+FRA_ADJ;French;;;;;;;;;;;;;;;;;;;x;;;;;;;;
+ENG;United Kingdom;;;;;;;;;x;;;;;;;;;;;;;;;;;;
+ENG_ADJ;British;;;;x;;;;;;;;;;;;;;;;;;;
+ZAK;english;french;german;polish;spanish;italian;swedish;czech;hungarian;dutch;portuguese;russian;finnish;x
+GLM_ADJ;Galician;Galicien;Galiziener;;Galiciano;;x;;;;;;;;;;;;;;;;;;;;;;
+decision_title;title;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
+decision_desc;description;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,
+TEST;short;

@@ -1,0 +1,17 @@
+TUR = "countries/Ottoman Empire.txt"
+MOR = "countries/Morocco.txt"
+ENG = "countries/United Kingdom.txt"
+RUS = "countries/Russia.txt"
+FRA = "countries/France.txt"
+GER = "countries/Germany.txt"
+AUS = "countries/Austria.txt"
+USA = "countries/USA.txt"
+JAP = "countries/Japan.txt"
+ITA = "countries/Italy.txt"
+
+dynamic_tags = yes # any tags after this is considered dynamic dominions
+D01 = "countries/D01.txt"
+D02 = "countries/D02.txt"
+D03 = "countries/D03.txt"
+D04 = "countries/D04.txt"
+D05 = "countries/D05.txt"

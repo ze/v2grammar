@@ -1,0 +1,122 @@
+#New York (440000/110000 POPS)
+232 = {
+	capitalists = {
+		culture = yankee
+		religion = protestant
+		size = 125
+	}
+
+	clergymen = {
+		culture = yankee
+		religion = protestant
+		size = 675
+	}
+
+	clerks = {
+		culture = yankee
+		religion = protestant
+		size = 125
+	}
+
+	craftsmen = {
+		culture = yankee
+		religion = protestant
+		size = 26500
+	}
+
+	artisans = {
+		culture = yankee
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = yankee
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = yankee
+		religion = protestant
+		size = 10000
+	}
+
+	artisans = {
+		culture = yankee
+		religion = protestant
+		size = 8375
+	}
+
+	soldiers = {
+		culture = yankee
+		religion = protestant
+		size = 2000
+	}
+
+	farmers = {
+		culture = yankee
+		religion = protestant
+		size = 95125
+	}
+
+	clergymen = {
+		culture = yankee
+		religion = catholic
+		size = 75
+	}
+
+	artisans = {
+		culture = yankee
+		religion = catholic
+		size = 4000
+	}
+
+	soldiers = {
+		culture = yankee
+		religion = catholic
+		size = 50
+	}
+
+	farmers = {
+		culture = yankee
+		religion = catholic
+		size = 875
+	}
+
+	clergymen = {
+		culture = afro_american
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = afro_american
+		religion = protestant
+		size = 4925
+	}
+
+	clergymen = {
+		culture = irish
+		religion = catholic
+		size = 50
+	}
+
+	artisans = {
+		culture = irish
+		religion = catholic
+		size = 3950
+	}
+
+	clergymen = {
+		culture = yankee
+		religion = jewish
+		size = 10
+	}
+
+	artisans = {
+		culture = yankee
+		religion = jewish
+		size = 490
+	}
+}

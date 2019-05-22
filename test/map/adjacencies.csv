@@ -1,0 +1,11 @@
+From;To;Type;Through;Data;Comment
+#
+# blah blah blah
+#
+13;14;sea;3011;0;Vancouver Crossing
+62;75;sea;2946;0;Straits of Belle Isle
+68;70;sea;2944;0;Cabot Strait
+#2237;2269;sea;2975;0;Strait of Trinidad <-- commented out
+860;861;land;2773;0;Golden Horn
+1326;1589;impassable;0;0;scary mountain
+2711;2721;canal;369;1;Kiel Canal

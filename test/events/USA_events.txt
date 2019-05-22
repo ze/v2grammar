@@ -1,0 +1,40 @@
+country_event = {
+
+	id = 44105
+	news = yes
+	news_desc_long = "EVTDESC44105_NEWS_LONG"
+	news_desc_medium = "EVTDESC44105_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC44105_NEWS_SHORT"
+
+	trigger = {
+		tag = USA
+		year = 1846
+		NOT = { year = 1849 }
+	}
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen =  {
+		months = 5
+
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1847
+		}
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1848
+		}
+	}
+
+	title = "EVTNAME44105"
+	desc = "EVTDESC44105"
+	picture = "Smithsonian"
+
+	option = {
+		name = "EVTOPTA44105" 
+		prestige = 5
+		years_of_research = 0.5
+	}
+
+}
