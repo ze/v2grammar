@@ -35,7 +35,7 @@ technologyEffect:
 	| industryEffect
 	| navalEffect
 	| rgoGoodsOutputBlock
-		// bottom are both commerce and industry. These two branches have high intersectionality.
+	// bottom are both commerce and industry. These two branches have high intersectionality.
 	| rgoSizeBlock
 	| farmRgoEffExpr;
 activateBuildingExpr: ACTIVATE_BUILDING ASSIGN IDENTIFIER;
@@ -62,9 +62,8 @@ supplyConsumptionExpr: SUPPLY_CONSUMPTION ASSIGN (INT | FLOAT);
 digInCapExpr: DIG_IN_CAP ASSIGN INT;
 maxFortExpr: MAX_FORT ASSIGN INT;
 combatWidthExpr: COMBAT_WIDTH ASSIGN INT;
-mobilizationSizeExpr:
-	MOBILIZATION_SIZE ASSIGN (INT | FLOAT);
-	// should never be an int, but just in case. same for below sometimes.
+mobilizationSizeExpr: MOBILIZATION_SIZE ASSIGN (INT | FLOAT);
+// should never be an int, but just in case. same for below sometimes.
 moraleExpr: MORALE ASSIGN (INT | FLOAT);
 militaryTacticsExpr: MILITARY_TACTICS ASSIGN (INT | FLOAT);
 

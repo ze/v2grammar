@@ -28,7 +28,7 @@ countryScopeCondition:
 	| countryCondition
 	| culturalUnionCondition
 	| overlordCondition
-	//    | regionCondition // DYNAMIC ISSUE
+	| regionCondition
 	| sphereOwnerCondition
 	| anySubstateCondition;
 
@@ -60,6 +60,8 @@ culturalUnionCondition:
 
 overlordCondition:
 	OVERLORD ASSIGN L_BRACE (condition | limitBlock)* R_BRACE;
+
+regionCondition: IDENTIFIER ASSIGN L_BRACE condition* R_BRACE;
 
 sphereOwnerCondition:
 	SPHERE_OWNER ASSIGN L_BRACE (condition | limitBlock)* R_BRACE;
@@ -220,7 +222,7 @@ countryRel:
 	| numOfVassalsNoSubstatesRel
 	| ownsRel
 	| partOfSphereRel
-	//    | [partyIssue]Rel dynamic issue
+	| partyOrPoptypeRel
 	| politicalMovementStrengthRel
 	| politicalReformRel
 	| politicalReformWantRel
@@ -232,7 +234,6 @@ countryRel:
 	| popMajorityIdeologyRel
 	| popMajorityReligionRel
 	| popMilitancyRel
-	//    | [poptype]Rel dynamic issue
 	| prestigeRel
 	| primaryCultureRel
 	| acceptedCultureRel
@@ -402,7 +403,7 @@ numOfVassalsNoSubstatesRel:
 	NUM_OF_VASSALS_NO_SUBSTATES ASSIGN INT;
 ownsRel: OWNS ASSIGN INT;
 partOfSphereRel: PART_OF_SPHERE ASSIGN affirmative;
-//[partyIssue]Rel: [PARTY_ISSUE] ASSIGN ; // DYNAMIC ISSUE
+partyOrPoptypeRel: IDENTIFIER ASSIGN (INT | FLOAT);
 politicalMovementStrengthRel:
 	POLITICAL_MOVEMENT_STRENGTH ASSIGN (INT | FLOAT);
 politicalReformRel:
@@ -736,7 +737,6 @@ NUM_OF_VASSALS: 'num_of_vassals';
 NUM_OF_VASSALS_NO_SUBSTATES: 'num_of_vassals_no_substates';
 OWNS: 'owns';
 PART_OF_SPHERE: 'part_of_sphere';
-// [PARTY_ISSUE]: '[party_issue]'; // DYNAMIC ISSUE
 POLITICAL_MOVEMENT_STRENGTH: 'political_movement_strength';
 POLITICAL_REFORM: 'political_reform';
 POLITICAL_REFORM_WANT: 'political_reform_want';
@@ -748,7 +748,6 @@ POP_MAJORITY_CULTURE: 'pop_majority_culture';
 POP_MAJORITY_IDEOLOGY: 'pop_majority_ideology';
 POP_MAJORITY_RELIGION: 'pop_majority_religion';
 POP_MILITANCY: 'pop_militancy';
-//[POPTYPE]: '[poptype]'; // DYNAMIC ISSUE
 PRESTIGE: 'prestige';
 PRIMARY_CULTURE: 'primary_culture';
 ACCEPTED_CULTURE: 'accepted_culture';

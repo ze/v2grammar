@@ -29,7 +29,7 @@ countryScopeEffect:
 	| randomStateEffect
 	| randomOwnedEffect
 	| randomPopEffect
-	//    | regionEffect // DYNAMIC ISSUE
+	| regionEffect
 	| sphereOwnerEffect;
 
 allCoreEffect:
@@ -78,6 +78,8 @@ randomOwnedEffect:
 
 randomPopEffect:
 	RANDOM_POP ASSIGN L_BRACE (effect | limitBlock)* R_BRACE;
+
+regionEffect: IDENTIFIER ASSIGN L_BRACE effect* R_BRACE;
 
 sphereOwnerEffect:
 	SPHERE_OWNER ASSIGN L_BRACE (effect | limitBlock)* R_BRACE;
@@ -383,12 +385,12 @@ callAllyExpr: 'call_ally' ASSIGN affirmative;
 
 economicEffect:
 	addTaxRelativeIncomeAction
-	//    | resourceAction // DYNAMIC action
+	| resourceAction
 	| treasuryAction;
 
 addTaxRelativeIncomeAction:
 	ADD_TAX_RELATIVE_INCOME ASSIGN (INT | FLOAT);
-//resourceAction: IDENTIFIER ASSIGN (INT | FLOAT); // DYNAMIC ISSUE
+resourceAction: IDENTIFIER ASSIGN (INT | FLOAT);
 treasuryAction: TREASURY ASSIGN (INT | FLOAT);
 
 changeTagAction: CHANGE_TAG ASSIGN COUNTRY_TAG;
@@ -491,7 +493,6 @@ LEAVE_ALLIANCE: 'leave_alliance';
 RELEASE: 'release';
 RELEASE_VASSAL: 'release_vassal';
 ADD_TAX_RELATIVE_INCOME: 'add_tax_relative_income';
-// [RESOURCE NAME]: '[resource name]'; // DYNAMIC ISSUE
 LEADERSHIP: 'leadership';
 TREASURY: 'treasury';
 CHANGE_TAG: 'change_tag';
@@ -543,7 +544,6 @@ MOBILIZATION_IMPACT: 'mobilization_impact';
 MOBILISATION_SIZE: 'mobilisation_size';
 NAVAL_ORGANISATION: 'naval_organisation';
 NAVAL_UNIT_START_EXPERIENCE: 'naval_unit_start_experience';
-//NON_ACCEPTED_POP_(TRAIT)_MODIFIER: 'non_accepted_pop_(trait)_modifier';
 ORG_REGAIN: 'org_regain';
 POLITICAL_REFORM_DESIRE: 'political_reform_desire';
 RESEARCH_POINTS_MODIFIER: 'research_points_modifier';
@@ -553,9 +553,7 @@ RULING_PARTY_SUPPORT: 'ruling_party_support';
 SOCIAL_REFORM_DESIRE: 'social_reform_desire';
 SUPPRESSION_POINTS_MODIFIER: 'suppression_points_modifier';
 SUPPLY_CONSUMPTION: 'supply_consumption';
-//(STRATA)_VOTE: '(strata)_vote';
 TAX_EFFICIENCY: 'tax_efficiency';
-//(CATEGORY)_TECH_RESEARCH_BONUS: '(category)_tech_research_bonus';
 UNIT_START_EXPERIENCE: 'unit_start_experience';
 ASSIMILATION_RATE: 'assimilation_rate';
 IMMIGRANT_ATTRACT: 'immigrant_attract';

@@ -33,7 +33,6 @@ partyInfo:
 	| startDateExpr
 	| endDateExpr
 	| ideologyExpr
-	// TODO social policies. need to parse that separately and validate
 	| policyExpr;
 
 unitNamesBlock: UNIT_NAMES ASSIGN L_BRACE unitNameExpr* R_BRACE;

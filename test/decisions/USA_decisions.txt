@@ -39,7 +39,7 @@ political_decisions = {
             }
         }
     }
-    
+
     manifest_destiny = {
         potential = {
             tag = USA
@@ -78,7 +78,7 @@ political_decisions = {
             #USA_78 = { add_core = USA } #Washington
             USA_81 = { add_core = USA } #Portland
             USA_91 = { add_core = USA } #Idaho
-            USA_111 = { add_core = USA } 
+            USA_111 = { add_core = USA }
             USA_126 = { add_core = USA }
             2148 = { add_core = USA }
             105 = { add_core = USA }
@@ -273,7 +273,7 @@ political_decisions = {
                 has_country_flag = has_used_radical_reconstruction
             }
         }
-        
+
         allow = {
             state_n_government = 1
         }

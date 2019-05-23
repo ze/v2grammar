@@ -4,7 +4,7 @@ grammar Issues;
  * Handles `common/issues.txt`.
  */
 
-// TODO this file is so much work...
+// TODO issues
 issues: EOF;
 
 IDENTIFIER: LETTERS (LETTERS | DIGIT)*;

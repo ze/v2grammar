@@ -10,6 +10,8 @@ grammar Inventions;
 
 import Conditions;
 
+IDENTIFIER: (LETTER | DIGIT) (LETTER | '0' ..'9')*;
+
 inventions: invention* EOF;
 invention: IDENTIFIER ASSIGN L_BRACE inventionData* R_BRACE;
 inventionData:
