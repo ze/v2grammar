@@ -24,10 +24,10 @@ L_BRACE: '{';
 R_BRACE: '}';
 
 INT: DIGIT+;
-fragment DIGIT: ('0' ..'9');
+fragment DIGIT: ('0' .. '9');
 
-IDENTIFIER: LETTERS (LETTERS | '0' ..'9')*;
-fragment LETTERS: ('a' ..'z' | 'A' ..'Z' | '_');
+IDENTIFIER: LETTERS (LETTERS | '0' .. '9')*;
+fragment LETTERS: ('a' .. 'z' | 'A' .. 'Z' | '_');
 
 COMMENT: '#' ~('\r' | '\n')* -> skip;
 WS: [ \t\r\n] -> skip;

@@ -8,10 +8,10 @@ region: regionData* EOF;
 regionData: IDENTIFIER ASSIGN L_BRACE INT* R_BRACE;
 
 INT: '-'? DIGIT+;
-fragment DIGIT: ('0' ..'9');
+fragment DIGIT: ('0' .. '9');
 
-IDENTIFIER: LETTERS (LETTERS | '0' ..'9')*;
-fragment LETTERS: ('a' ..'z' | 'A' ..'Z' | '_');
+IDENTIFIER: LETTERS (LETTERS | '0' .. '9')*;
+fragment LETTERS: ('a' .. 'z' | 'A' .. 'Z' | '_');
 
 ASSIGN: '=';
 L_BRACE: '{';

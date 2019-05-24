@@ -61,7 +61,7 @@ MAX_ATTRITION: 'max_attrition';
 FLOAT: INT? '.' DIGIT+;
 
 INT: '-'? DIGIT+;
-fragment DIGIT: ('0' ..'9');
+fragment DIGIT: ('0' .. '9');
 
 ASSIGN: '=';
 L_BRACE: '{';

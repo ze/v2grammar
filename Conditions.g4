@@ -918,9 +918,9 @@ FLOAT: INT? '.' DIGIT+;
 INT: '-'? DIGIT+;
 
 IDENTIFIER: LETTER (LETTER | DIGIT | '.')*;
-fragment DIGIT: ('0' ..'9');
-fragment LETTER: ('a' ..'z' | CAP_LETTER | '_');
-fragment CAP_LETTER: ('A' ..'Z');
+fragment DIGIT: ('0' .. '9');
+fragment LETTER: ('a' .. 'z' | CAP_LETTER | '_');
+fragment CAP_LETTER: ('A' .. 'Z');
 
 COMMENT: '#' ~('\r' | '\n')* -> skip;
 WS: [ \t\r\n] -> skip;

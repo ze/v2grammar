@@ -50,7 +50,7 @@ OVERSEAS_PENALTY: 'overseas_penalty';
 FLOAT: INT? '.' DIGIT+;
 
 INT: '-'? DIGIT+;
-fragment DIGIT: ('0' ..'9');
+fragment DIGIT: ('0' .. '9');
 
 affirmative: YES | NO;
 YES: 'yes';
@@ -66,8 +66,8 @@ L_BRACE: '{';
 R_BRACE: '}';
 
 STRING: '"' (~'"' | '\\"')* '"';
-IDENTIFIER: LETTERS (LETTERS | '0' ..'9')*;
-fragment LETTERS: ('a' ..'z' | 'A' ..'Z' | '_');
+IDENTIFIER: LETTERS (LETTERS | '0' .. '9')*;
+fragment LETTERS: ('a' .. 'z' | 'A' .. 'Z' | '_');
 
 COMMENT: '#' ~('\r' | '\n')* -> skip;
 WS: [ \t\r\n] -> skip;

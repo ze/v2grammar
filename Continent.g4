@@ -28,14 +28,14 @@ ASSIMILATION_RATE: 'assimilation_rate';
 FLOAT: INT? '.' DIGIT+;
 
 INT: '-'? DIGIT+;
-fragment DIGIT: ('0' ..'9');
+fragment DIGIT: ('0' .. '9');
 
 ASSIGN: '=';
 L_BRACE: '{';
 R_BRACE: '}';
 
-IDENTIFIER: LETTERS (LETTERS | '0' ..'9')*;
-fragment LETTERS: ('a' ..'z' | 'A' ..'Z' | '_');
+IDENTIFIER: LETTERS (LETTERS | '0' .. '9')*;
+fragment LETTERS: ('a' .. 'z' | 'A' .. 'Z' | '_');
 
 COMMENT: '#' ~('\r' | '\n')* -> skip;
 WS: [ \t\r\n] -> skip;

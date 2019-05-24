@@ -58,7 +58,7 @@ DATE: INT '.' INT '.' INT;
 
 COUNTRY_TAG: (CAP_LETTER CAP_OR_DIGIT CAP_OR_DIGIT);
 fragment CAP_OR_DIGIT: CAP_LETTER | DIGIT;
-fragment CAP_LETTER: ('A' ..'Z');
+fragment CAP_LETTER: ('A' .. 'Z');
 
 ASSIGN: '=';
 L_BRACE: '{';
@@ -69,8 +69,8 @@ STRING: '"' (~'"' | '\\"')* '"';
 INT: '-'? DIGIT+;
 IDENTIFIER: LETTERS (LETTERS | DIGIT)*;
 
-fragment DIGIT: ('0' ..'9');
-fragment LETTERS: ('a' ..'z' | 'A' ..'Z' | '_');
+fragment DIGIT: ('0' .. '9');
+fragment LETTERS: ('a' .. 'z' | 'A' .. 'Z' | '_');
 
 COMMENT: '#' ~('\r' | '\n')* -> skip;
 WS: [ \t\r\n] -> skip;
