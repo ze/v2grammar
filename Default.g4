@@ -1,4 +1,4 @@
-grammar Defaults;
+grammar Default;
 
 /*
  * Handles the default.map file in directory `map`.
