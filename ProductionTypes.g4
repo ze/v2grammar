@@ -12,10 +12,10 @@ ASSIGN: '=';
 L_BRACE: '{';
 R_BRACE: '}';
 
-IDENTIFIER: LETTERS (LETTERS | DIGIT)*;
+IDENTIFIER: LETTER (LETTER | DIGIT)*;
 
 fragment DIGIT: ('0' .. '9');
-fragment LETTERS: ('a' .. 'z' | 'A' .. 'Z' | '_');
+fragment LETTER: ('a' .. 'z' | 'A' .. 'Z' | '_');
 
 COMMENT: '#' ~('\r' | '\n')* -> skip;
 WS: [ \t\r\n] -> skip;

@@ -61,8 +61,8 @@ UNCIV_MILITARY_MODIFIER: 'unciv_military_modifier';
 SCHOOLS: 'schools';
 FOLDERS: 'folders';
 
-IDENTIFIER: LETTERS (LETTERS | '0' .. '9')*;
-fragment LETTERS: ('a' .. 'z' | 'A' .. 'Z' | '_');
+IDENTIFIER: LETTER (LETTER | '0' .. '9')*;
+fragment LETTER: ('a' .. 'z' | 'A' .. 'Z' | '_');
 
 FLOAT: INT? '.' DIGIT+;
 
